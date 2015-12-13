@@ -79,7 +79,13 @@
     "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/google-chrome.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "pkey",
+        "package" : {
+          "key" : "https://dl-ssl.google.com/linux/linux_signing_key.pub",
+          "url" : "http://dl.google.com/linux/chrome/deb/",
+          "version" : "stable main",
+          "name" : "google-chrome-stable"
+        }
       }
     }
   },{
@@ -119,7 +125,9 @@
     "logo": "https://camo.githubusercontent.com/c542435e7f50507301e26a5661c6549d07043c2f/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f363839383232382f323436303339372f63643464303466362d616636392d313165332d393730322d3366663535386136623861332e706e67",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "ppa",
+        "repository" : "apt-add-repository ppa:teejee2008/ppa",
+        "package" : "conky-manager"
       }
     }
   }, {
@@ -199,7 +207,9 @@
     "logo": "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Media-gimp-icon.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "ppa",
+        "repository" : "apt-add-repository ppa:otto-kesselgulasch/gimp",
+        "package" : "gimp"
       }
     }
   }, {
@@ -469,7 +479,8 @@
     "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/vlc.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "ppa",
+        "repository" : "ppa:videolan/stable-daily"
       }
     }
   }, {
