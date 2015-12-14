@@ -167,7 +167,8 @@
     "logo": "http://www.iconarchive.com/download/i80439/uiconstock/socialmedia/Dropbox.ico",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "manual",
+        "install": ["wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_$arch.deb -O $tmp/dropbox.deb", "dpkg -i $tmp/dropbox.deb", "apt-get install -f"]
       }
     }
   }, {
@@ -177,13 +178,8 @@
     "logo": "http://allaboutwindowsphone.com/images/appicons/412820.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "pkey",
-        "package" : {
-          "key" : "https://dl-ssl.google.com/linux/linux_signing_key.pub",
-          "url" : "http://download.opensuse.org/repositories/home:/colomboem/xUbuntu_12.04/",
-          "version" : "beta",
-          "name" : "google-chrome-beta"
-        }
+        "type" : "manual",
+        "install" : ["echo 'deb http://download.opensuse.org/repositories/home:/colomboem/xUbuntu_12.04/ /' > /etc/apt/sources.list.d/dukto.list","apt-get install dukto -y"]
       }
     }
   }, {
@@ -367,7 +363,8 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : ""
+        "type" : "manual",
+        "postinstall": ["wget http://www67.zippyshare.com/d/79zgV98j/769/Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "tar xf Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "cd Popcorn-Time-0.3.8-5-Linux-64", "./install"]
       }
     }
   }, {
@@ -402,12 +399,7 @@
     "distros" : {
       "Ubuntu" : {
         "type" : "manual",
-        "package" : {
-          "key" : "",
-          "url" : "",
-          "version" : "",
-          "name" : ""
-        }
+        "install": ["apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 && echo deb http://repository.spotify.com stable non-free | tee /etc/apt/sources.list.d/spotify.list","apt-get install spotify-client -y"]
       }
     }
   }, {
@@ -568,6 +560,18 @@
         "type" : "ppa",
         "repository" : "ppa:elementary-os/daily",
         "package" : "audience"
+      }
+    }
+  }, {
+    "id": 53,
+    "nombre": "Ambient Noise",
+    "descr": "Media player made for ElementaryOS",
+    "logo": "http://ubuntuhandbook.org/wp-content/uploads/2015/04/anoise-player.png",
+    "distros" : {
+      "Ubuntu" : {
+        "type" : "ppa",
+        "repository" : "ppa:costales/anoise",
+        "package" : "anoise"
       }
     }
   }]
