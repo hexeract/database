@@ -80,39 +80,37 @@
         "package": "caffeine-plus"
       }
     }
-  }, {
-    "id": 8,
-    "nombre": "Chrome",
-    "descr": "Google Chrome web browser",
-    "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/google-chrome.png",
-    "distros" : {
-      "Ubuntu" : {
-        "type" : "pkey",
-        "package" : {
-          "key" : "https://dl-ssl.google.com/linux/linux_signing_key.pub",
-          "url" : "http://dl.google.com/linux/chrome/deb/",
-          "version" : "stable main",
-          "name" : "google-chrome-stable"
+    }, {
+      "id": 8,
+      "nombre": "Chrome",
+      "descr": "Google Chrome web browser",
+      "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/google-chrome.png",
+      "distros" : {
+        "Ubuntu" : {
+          "type" : "manual",
+          "repos" : [
+                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - !",
+          	          "echo \"deb http://dl.google.com/linux/chrome/deb/ stable main\" > /etc/apt/sources.list.d/chrome.list"
+                   ],
+          "install": "apt-get install google-chrome-stable"
+          }
+        }
+      },{
+      "id": 9,
+      "nombre": "Chrome Beta",
+      "descr": "Google Chrome web browser (beta) ",
+      "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/google-chrome.png",
+      "distros" : {
+        "Ubuntu" : {
+          "type" : "manual",
+          "repos" : [
+                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - !",
+          	          "echo \"deb http://dl.google.com/linux/chrome/deb/ stable main\" > /etc/apt/sources.list.d/chrome.list"
+                   ],
+          "install": "apt-get install google-chrome-beta"
         }
       }
-    }
-  },{
-    "id": 9,
-    "nombre": "Chrome Beta",
-    "descr": "Google Chrome web browser (beta) ",
-    "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/google-chrome.png",
-    "distros" : {
-      "Ubuntu" : {
-        "type" : "pkey",
-        "package" : {
-          "key" : "https://dl-ssl.google.com/linux/linux_signing_key.pub",
-          "url" : "http://dl.google.com/linux/chrome/deb/",
-          "version" : "stable main",
-          "name" : "google-chrome-beta"
-        }
-      }
-    }
-  }, {
+    }, {
     "id": 10,
     "nombre": "Chromium",
     "descr": "Open source browser project from which Chrome is based",
