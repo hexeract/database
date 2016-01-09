@@ -76,8 +76,9 @@
     "logo": "http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Caffeine-icon.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "apt",
-        "package": "caffeine-plus"
+        "type" : "ppa",
+        "repository" : "ppa:caffeine-developers/ppa",
+        "package": "caffeine"
       }
     }
     }, {
@@ -89,10 +90,10 @@
         "Ubuntu" : {
           "type" : "manual",
           "repos" : [
-                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - !",
+                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -",
           	          "echo \"deb http://dl.google.com/linux/chrome/deb/ stable main\" > /etc/apt/sources.list.d/chrome.list"
                    ],
-          "install": "apt-get install google-chrome-stable"
+          "install": "apt-get install -y google-chrome-stable"
           }
         }
       },{
@@ -104,10 +105,10 @@
         "Ubuntu" : {
           "type" : "manual",
           "repos" : [
-                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - !",
+                      "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -",
           	          "echo \"deb http://dl.google.com/linux/chrome/deb/ stable main\" > /etc/apt/sources.list.d/chrome.list"
                    ],
-          "install": "apt-get install google-chrome-beta"
+          "install": "apt-get install -y google-chrome-beta"
         }
       }
     }, {
@@ -117,8 +118,7 @@
     "logo": "https://raw.githubusercontent.com/snwh/paper-icon-theme/master/Paper/512x512/apps/chromium-browser.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "ppa",
-        "repository": "ppa:chromium-daily/stable",
+        "type" : "apt",
         "package": "chromium-browser"
       }
     }
@@ -142,7 +142,7 @@
     "distros" : {
       "Ubuntu" : {
         "type" : "ppa",
-        "repository" : "apt-add-repository ppa:teejee2008/ppa",
+        "repository" : "ppa:teejee2008/ppa",
         "package" : "conky-manager"
       }
     }
@@ -170,24 +170,14 @@
       }
     }
   }, {
-    "id": 16,
-    "nombre": "Dukto",
-    "descr": "easy file transfer tool for LAN use",
-    "logo": "http://allaboutwindowsphone.com/images/appicons/412820.png",
-    "distros" : {
-      "Ubuntu" : {
-        "type" : "manual",
-        "install" : ["echo 'deb http://download.opensuse.org/repositories/home:/colomboem/xUbuntu_12.04/ /' > /etc/apt/sources.list.d/dukto.list","apt-get install dukto -y"]
-      }
-    }
-  }, {
     "id": 17,
     "nombre": "Everpad",
     "descr": "Evernote client well integrated with linux desktop",
     "logo": "https://extensions.gnome.org/static/extension-data/icons/icon_677.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "apt",
+        "type" : "ppa",
+        "repository": "ppa:nvbn-rm/ppa",
         "package": "everpad"
       }
     }
@@ -248,18 +238,6 @@
       }
     }
   }, {
-    "id": 23,
-    "nombre": "Grive Tools",
-    "descr": "Instalation of Google Drive on Ubuntu",
-    "logo": "http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-Drive-icon.png",
-    "distros" : {
-      "Ubuntu" : {
-        "type" : "ppa",
-        "repository": "ppa:thefanclub/grive-tools",
-        "package" : "grive-tools"
-      }
-    }
-  }, {
     "id": 24,
     "nombre": "Grub Customizer",
     "descr": "GUI to customize grub/burg",
@@ -314,7 +292,8 @@
     "logo": "http://kodi.wiki/images/thumb/8/8e/Thumbnail-symbol-transparent.png/300px-Thumbnail-symbol-transparent.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "apt",
+        "type" : "ppa",
+        "repository": "ppa:team-xbmc/ppa",
         "package" : "kodi"
       }
     }
@@ -397,7 +376,8 @@
     "distros" : {
       "Ubuntu" : {
         "type" : "manual",
-        "install": ["apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 && echo deb http://repository.spotify.com stable non-free | tee /etc/apt/sources.list.d/spotify.list","apt-get install spotify-client -y"]
+        "repos" : ["apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886" , "echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list"],
+        "install": "apt-get install spotify-client -y"
       }
     }
   }, {
@@ -419,7 +399,8 @@
     "logo": "http://icons.iconarchive.com/icons/bokehlicia/pacifica/256/synapse-icon.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "apt",
+        "type" : "ppa",
+        "repository": "ppa:synapse-core/testing",
         "package": "synapse"
       }
     }
