@@ -364,7 +364,7 @@
     "distros" : {
       "Ubuntu" : {
         "type" : "manual",
-        "postinstall": ["wget http://www67.zippyshare.com/d/79zgV98j/769/Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "tar xf Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "cd Popcorn-Time-0.3.8-5-Linux-64", "./install"]
+        "postInstall": ["wget http://www67.zippyshare.com/d/79zgV98j/769/Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "tar xf Popcorn-Time-0.3.8-5-Linux-64.tar.xz", "cd Popcorn-Time-0.3.8-5-Linux-64", "./install"]
       }
     }
   }, {
