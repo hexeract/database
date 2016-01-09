@@ -25,15 +25,15 @@
     "name": "Numix-uTouch",
     "type":"ppa",
     "img": "https://oduso.com/image/5407499779b43e89383a2260",
-    "repository": "ppa:numix-icon-theme-dev/utouch",
-    "package": "numix-utouch-icon-theme"
+    "repository": "ppa:versable/elementary-update",
+    "package": "elementary-enumix-utouch-icons"
   },{
     "id": 5,
     "name": "Tap",
     "type":"ppa",
     "img": "https://oduso.com/image/54074a7579b43e89383a2261",
-    "repository": "ppa:spiceofdesign/tap-daily",
-    "package": "tap-icon-theme"
+    "repository": "ppa:versable/elementary-update",
+    "package": "elementary-taprevival-icons"
   }, {
     "id": 6,
     "name": "Nitrux",
@@ -44,16 +44,15 @@
   }, {
     "id": 7,
     "name": "Pacifica",
-    "type":"ppa",
+    "type":"manual",
     "img": "https://oduso.com/image/543c0079e894790000091ff3",
-    "repository": "ppa:fsvh/pacifica-icon-theme",
-    "package": "pacifica-icon-theme"
+    "install": ["wget http://fc00.deviantart.net/fs71/f/2013/305/9/6/pacifica_icons_by_bokehlicia-d6nn5lb.zip -O $tmp/pacifica.zip", "unzip $tmp/pacifica.zip -d $tmp", "mv $tmp/Pacifica /usr/share/icons/", "mv $tmp/Pacifica-U /usr/share/icons/"],
   }, {
     "id": 8,
     "name": "Flattr",
     "type":"manual",
     "img": "https://oduso.com/image/557237c1f6da0500006de633",
-    "install": "wget https://github.com/NitruxSA/flattr-icons/archive/master.zip -O $tmp/flattr.zip && unzip flattr.zip -d $tmp && cd flattr-icons-master && mv Flattr /usr/share/icons && mv Flattr /usr/share/icons"
+    "install": "wget https://github.com/NitruxSA/flattr-icons/archive/master.zip -O $tmp/flattr.zip && unzip $tmp/flattr.zip -d $tmp && mv $tmp/flattr-icons-master/Flattr /usr/share/icons"
   }, {
     "id": 9,
     "type":"ppa",

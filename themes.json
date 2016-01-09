@@ -41,12 +41,5 @@
     "img": "",
     "repository": "ppa:moka/stable",
     "package" : "orchis-gtk-theme"
-  }, {
-    "id": 7,
-    "name": "Moka gnome shell",
-    "type": "ppa",
-    "img": "",
-    "repository": "ppa:moka/stable",
-    "package" : "moka-gnome-shell-theme"
   }]
 }
