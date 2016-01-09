@@ -9,36 +9,42 @@
   }, {
     "id": 2,
     "name": "Vertex",
+    "type": "ppa",
     "img": "https://raw.githubusercontent.com/matias-pierobon/app-installer/master/web/img/vertex%20theme.png",
     "repository": "ppa:noobslab/themes",
     "package": "vertex-theme"
   }, {
     "id": 3,
     "name": "Numix",
+    "type": "ppa",
     "img": "http://worldofgnome.org/uploads/2013/03/numix___gtk3_theme_by_satya164-d5ygul6.jpg",
     "repository": "ppa:numix/ppa",
     "package": "numix-gtk-theme"
   }, {
     "id": 4,
     "name": "Arc",
+    "type": "ppa",
     "img": "https://camo.githubusercontent.com/b07bd2390cdd348e6404e46a97e3f35d2be5c25e/687474703a2f2f692e696d6775722e636f6d2f7444314f4251332e706e67",
     "repository": "ppa:noobslab/themes",
     "package": "arc-theme"
   }, {
     "id": 5,
     "name": "Flatabulous",
+    "type": "ppa",
     "img": "https://camo.githubusercontent.com/396eb7d91c4e97c5aa7ef8109066de69cc0cad7d/687474703a2f2f692e696d6775722e636f6d2f30535a727265332e706e67",
     "repository": "ppa:noobslab/themes",
     "package": "flatabulous-theme"
   }, {
     "id": 6,
     "name": "Orchis",
+    "type": "ppa",
     "img": "",
     "repository": "ppa:moka/stable",
     "package" : "orchis-gtk-theme"
   }, {
     "id": 7,
     "name": "Moka gnome shell",
+    "type": "ppa",
     "img": "",
     "repository": "ppa:moka/stable",
     "package" : "moka-gnome-shell-theme"
