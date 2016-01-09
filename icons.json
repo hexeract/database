@@ -23,17 +23,9 @@
   }, {
     "id": 4,
     "name": "Numix-uTouch",
-    "type":"ppa",
+    "type":"manual",
     "img": "https://oduso.com/image/5407499779b43e89383a2260",
-    "repository": "ppa:versable/elementary-update",
-    "package": "elementary-enumix-utouch-icons"
-  },{
-    "id": 5,
-    "name": "Tap",
-    "type":"ppa",
-    "img": "https://oduso.com/image/54074a7579b43e89383a2261",
-    "repository": "ppa:versable/elementary-update",
-    "package": "elementary-taprevival-icons"
+    "install": ["apt-get install git", "git clone https://github.com/numixproject/numix-icon-theme-utouch.git $tmp/utouch", "mv $tmp/utouch/Numix-uTouch /usr/share/icons/"]
   }, {
     "id": 6,
     "name": "Nitrux",
@@ -46,7 +38,7 @@
     "name": "Pacifica",
     "type":"manual",
     "img": "https://oduso.com/image/543c0079e894790000091ff3",
-    "install": ["wget http://fc00.deviantart.net/fs71/f/2013/305/9/6/pacifica_icons_by_bokehlicia-d6nn5lb.zip -O $tmp/pacifica.zip", "unzip $tmp/pacifica.zip -d $tmp", "mv $tmp/Pacifica /usr/share/icons/", "mv $tmp/Pacifica-U /usr/share/icons/"],
+    "install": ["wget http://fc00.deviantart.net/fs71/f/2013/305/9/6/pacifica_icons_by_bokehlicia-d6nn5lb.zip -O $tmp/pacifica.zip", "unzip $tmp/pacifica.zip -d $tmp", "mv $tmp/Pacifica /usr/share/icons/", "mv $tmp/Pacifica-U /usr/share/icons/"]
   }, {
     "id": 8,
     "name": "Flattr",
@@ -88,5 +80,12 @@
     "img": "",
     "repository": "ppa:snwh/pulp",
     "package": "paper-icon-theme"
+  }, {
+    "id": 14,
+    "type":"ppa",
+    "name": "Numix Shine",
+    "img": "",
+    "repository": "ppa:numix/ppa",
+    "package": "numix-icon-theme-shine"
   }]
 }
