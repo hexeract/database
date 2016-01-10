@@ -49,7 +49,7 @@
     "id": 9,
     "type":"ppa",
     "name": "Faba",
-    "img": "",
+    "img": "http://i.imgur.com/eyHtpie.png",
     "repository": "ppa:moka/stable",
     "package" : "faba-icon-theme faba-mono-icons"
   }, {
@@ -70,22 +70,15 @@
     "id": 12,
     "type":"ppa",
     "name": "Ultra Flat",
-    "img": "",
+    "img": "http://i.imgur.com/ruFxsCg.png",
     "repository": "ppa:noobslab/icons",
     "package": "ultra-flat-icons"
   }, {
     "id": 13,
     "type":"ppa",
     "name": "Paper",
-    "img": "",
+    "img": "http://i.imgur.com/DEoR5Ds.png",
     "repository": "ppa:snwh/pulp",
     "package": "paper-icon-theme"
-  }, {
-    "id": 14,
-    "type":"ppa",
-    "name": "Numix Shine",
-    "img": "",
-    "repository": "ppa:numix/ppa",
-    "package": "numix-icon-theme-shine"
   }]
 }
