@@ -18,14 +18,14 @@
     "name": "El Faenza",
     "type":"ppa",
     "img": "https://oduso.com/image/540631da716238d708eda94d",
-    "repository" : "ppa:tiheum/equinox",
+    "repository" : "ppa:noobslab/icons",
     "package": "faenza-icon-theme"
   }, {
     "id": 4,
     "name": "Numix-uTouch",
     "type":"manual",
     "img": "https://oduso.com/image/5407499779b43e89383a2260",
-    "install": ["apt-get install git", "git clone https://github.com/numixproject/numix-icon-theme-utouch.git $tmp/utouch", "mv $tmp/utouch/Numix-uTouch /usr/share/icons/"]
+    "install": ["apt-get install git -y", "git clone https://github.com/numixproject/numix-icon-theme-utouch.git $tmp/utouch", "mv $tmp/utouch/Numix-uTouch /usr/share/icons/"]
   }, {
     "id": 6,
     "name": "Nitrux",
@@ -52,13 +52,6 @@
     "img": "http://i.imgur.com/eyHtpie.png",
     "repository": "ppa:moka/stable",
     "package" : "faba-icon-theme faba-mono-icons"
-  }, {
-    "id": 10,
-    "type":"ppa",
-    "name": "Orchis",
-    "img": "",
-    "repository": "ppa:moka/stable",
-    "package" : "orchis-gtk-theme"
   }, {
     "id": 11,
     "type":"ppa",

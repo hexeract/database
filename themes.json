@@ -37,7 +37,7 @@
     "id": 6,
     "name": "Orchis",
     "type": "ppa",
-    "img": "",
+    "img": "http://i1-news.softpedia-static.com/images/news2/Orchis-GTK3-Theme-for-Ubuntu-Fedora-openSUSE-and-Arch-Linux-Is-Simply-Beautiful-437379-2.jpg",
     "repository": "ppa:moka/stable",
     "package" : "orchis-gtk-theme"
   }]
