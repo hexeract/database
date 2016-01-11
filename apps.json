@@ -316,8 +316,7 @@
     "logo": "https://raw.githubusercontent.com/moka-project/moka-icon-theme/master/Moka/96x96%402x/apps/pidgin.png",
     "distros" : {
       "Ubuntu" : {
-        "type" : "ppa",
-        "repository": "ppa:pidgin-developers/ppa",
+        "type" : "apt",
         "package": "pidgin"
       }
     }
